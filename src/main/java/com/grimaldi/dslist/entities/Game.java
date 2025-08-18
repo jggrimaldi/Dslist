@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 
 import java.util.Objects;
 
+//Entidade para criação de tabelas no banco de dados
 @Entity
 @Table(name = "tb_game")
 public class Game {

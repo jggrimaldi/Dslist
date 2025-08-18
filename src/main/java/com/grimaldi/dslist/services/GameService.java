@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+//Logica de negócios da aplicação
 @Service
 public class GameService {
 

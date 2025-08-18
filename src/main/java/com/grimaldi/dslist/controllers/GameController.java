@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+//Requisições HTTPS
 @RestController
 @RequestMapping(value = "/games")
 public class GameController {

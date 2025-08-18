@@ -2,6 +2,7 @@ package com.grimaldi.dslist.dto;
 
 import com.grimaldi.dslist.entities.Game;
 
+//Objeto usado para transferir apenas os dados mínimos do Game
 public class GameMinDto {
 
     private Long id;
