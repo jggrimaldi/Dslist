@@ -1,7 +1,6 @@
 package com.grimaldi.dslist.entities;
 
 import jakarta.persistence.*;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Objects;
 
@@ -10,7 +9,7 @@ import java.util.Objects;
 public class Belonging {
 
     @EmbeddedId
-    private BelongingPK id = new BelongingPK();
+    private BelongingPk id = new BelongingPk();
 
     @Column(insertable=false, updatable=false)
     private Integer position;
@@ -24,11 +23,11 @@ public class Belonging {
         this.position = position;
     }
 
-    public BelongingPK getId() {
+    public BelongingPk getId() {
         return id;
     }
 
-    public void setId(BelongingPK id) {
+    public void setId(BelongingPk id) {
         this.id = id;
     }
 
