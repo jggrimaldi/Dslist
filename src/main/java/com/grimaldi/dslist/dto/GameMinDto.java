@@ -1,6 +1,7 @@
 package com.grimaldi.dslist.dto;
 
 import com.grimaldi.dslist.entities.Game;
+import com.grimaldi.dslist.projections.GameMinProjection;
 
 //Objeto usado para transferir apenas os dados mínimos do Game
 public class GameMinDto {
@@ -20,6 +21,14 @@ public class GameMinDto {
         year = game.getYear();
         imgUrl = game.getImgUrl();
         shortDescription = game.getShortDescription();
+    }
+
+    public GameMinDto(GameMinProjection projection) {
+        id = projection.getId();
+        title = projection.getTitle();
+        year = projection.getYear();
+        imgUrl = projection.getImgUrl();
+        shortDescription = projection.getShortDescription();
     }
 
     public Long getId() {
